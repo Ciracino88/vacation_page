@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="modal">
+			<div class="feed_modal_page">
+				<button onclick="close_modal()" class="cancel_btn">x</button>
+				<div class="input_data_cover">
+					
+				</div>
+			</div>
+		</div>
+		<div class="write_modal">
+			<div class="feed_modal_page">
+				<button onclick="close_write_modal()" class="cancel_btn">x</button>
+				<div class="write_modal_input_cover">
+					<p class="write_modal_head">글쓰기</p>
+					<input class="write_modal_title_input" placeholder="제목을 입력해주세요">
+					<textarea class="write_modal_content_input" placeholder="내용을 작성해주세요"></textarea>
+					<button class="write_modal_upload_btn">저장</button>
+				</div>
+			</div>
+		</div>
+		<div class="cover">
+			<div class='top_nav'>
+				<p class="top_nav_logo">
+					Inst
+				</p>
+				<div class="top_nav_btn_cover">
+					<a class="top_nav_btn">회원가입</a>
+					<a class="top_nav_btn">로그인</a>
+				</div>
+			</div>
+			<div class="main">
+				<div class="main_side_bar">
+					<a>공지사항</a>
+					<a>휴가 관리</a>
+					<a>현재 상태</a>
+					<a>외출/외박</a>
+					<a>종교</a>
+					<a>게시판</a>
+				</div>
+				<div class="main_sector">
+					<div class="feed_navbar">
+						<button onclick="open_write_modal()" class="feed_navbar_write_btn">글쓰기</button>
+						<button class="feed_navbar_before_btn">이전</button>
+						<button class="feed_navbar_next_btn">다음</button>
+					</div>
+					<ul class="feed_data">
+						<li class="feed_data_num">번호</li>
+						<li class="feed_data_title">제목</li>
+						<li class="feed_data_admin">작성자</li>
+						<li class="feed_data_view">조회수</li>
+						<li class="feed_data_date">작성일자</li>
+					</ul>
+					<ul class="feed_data">
+						<li class="feed_data_num">1</li>
+						<li class="feed_data_title">
+							<a class="feed_data_title_link" href="#" onclick="open_modal()">아 그냥 ㄹㅇㅋㅋ만 치라고</a>
+						</li>
+						<li class="feed_data_admin">ciracino88</li>
+						<li class="feed_data_view">9999</li>
+						<li class="feed_data_date">2023.8.15</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+			function view_feed() {
+				
+			}
+			
+			function open_modal() {
+				const q = document.querySelector('.modal');
+				q.style.display = "block";
+				view_feed();
+			}
+			
+			function close_modal() {
+				const q = document.querySelector('.modal');
+				q.style.display = "none";
+			}
+			
+			function open_write_modal() {
+				const q = document.querySelector('.write_modal');
+				q.style.display = "block";
+			}
+			
+			function close_write_modal() {
+				const q = document.querySelector('.write_modal');
+				q.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
