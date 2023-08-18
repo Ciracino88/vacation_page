@@ -327,3 +327,125 @@
 .write_modal_upload_btn:hover {
 	background-color: #6c5ce7;
 }
+
+/* index 페이지 */
+
+/* 친구 탑 네비바 */
+
+.friends_top_nav {
+	display: flex;
+	justify-content: center;
+}
+
+.friend {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 20px 20px 0;
+}
+
+.friend_icon {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	background-image: linear-gradient(#bdc3c7, #bdc3c7), linear-gradient(to right, red 0%,  orange 100%);
+	border-image-slice: 1;
+	background-origin: border-box;
+    background-clip: content-box, border-box;
+	transition: 1s;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.friend_icon:hover {
+	transform: rotate(360deg);
+}
+
+.friend_icon > img {
+	height: 60px;
+	width: 60px;
+	border-radius: 300px;
+}
+
+.friend_icon > img {
+	width: 50px;
+	height: 50px;
+	padding: 5px 0 0 5px;
+	border-radius: 50%;
+}
+
+.friend_name {
+	text-align: center;
+	cursor: pointer;
+}
+
+/* 핫피드 */
+
+.hot_feed {
+	margin: 50px 100px 0 100px;
+}
+
+.hot_feed_head_cover {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hot_feed_admin {
+	display: flex;
+	flex-direction: row;
+}
+
+.hot_feed_admin_img {
+	width: 50px;
+	height: 50px;
+	border: 2px solid transparent;
+	border-radius: 50%;
+	background-image: linear-gradient(#bdc3c7, #bdc3c7), linear-gradient(to right, red 0%,  orange 100%);
+	border-image-slice: 1;
+	background-origin: border-box;
+    background-clip: content-box, border-box;
+	cursor: pointer;
+}
+
+.hot_feed_admin_img > img {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin: 3px 0 0 3px;
+}
+
+.hot_feed_admin_name {
+	font-weight: 600;
+	margin: 12px 0 0 8px;
+}
+
+.hot_feed_date {
+	margin: 15px 5px 0 0px;
+	color:#5F5F5F
+}
+
+.hot_feed_main_cover {
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 10px;
+	height: 300px;
+}
+
+.hot_feed_bottom_nav_bar {
+	margin-top: 5px;
+}
+
+.hot_feed_footer_like {
+	font-weight: 600;
+	margin: 5px 0 0 0;
+}
+
+.hot_feed_uploader {
+	margin-top: 8px;
+	display: flex;
+	flex-direction: row;
+}
+
+.hot_feed_uploader_nickname {
+	font-weight: 600;
+	margin-right: 5px;
+}
